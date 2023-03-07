@@ -1,0 +1,52 @@
+{
+  "name": "hybrid-cordova-vue",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicación Base Cordoba + Vue 3",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "add:platforms": "cordova platform add android"
+  },
+  "dependencies": {
+    "register-service-worker": "^1.7.1",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@appcominteractive/cordova-plugin-hot-reload": "^0.2.4",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "@appcominteractive/cordova-plugin-hot-reload": {
+        "publicPath": "www"
+      }
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "vue",
+    "cordova"
+  ],
+  "license": "Apache-2.0"
+}
