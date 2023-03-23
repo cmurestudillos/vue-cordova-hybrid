@@ -1,11 +1,5 @@
-module.exports = {
-  outputDir: './www',
-  chainWebpack: config => {
-    config.module
-      .rule('vue')
-      .use('vue-loader')
-        .tap(options => {
-          return options
-        })
-  }
-}
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  outputDir: './cordova/www',
+  transpileDependencies: true
+})
